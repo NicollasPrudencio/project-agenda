@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Agenda</h1>
+        <button id="new-contact-button">New contact +</button>
+    </header>
+
+    <form>
+        <input id="field-contact-name" type="text" required placeholder="Contact name">
+        <input id="field-contact-number" type="number" required placeholder="Contact number">
+        <button type="submit" id="bt-add">Add</button>
+        <button type="reset" id="bt-cancel">Cancel</button>
+    </form>
+
+    <div class="book">
+        <table class="tabela" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Contact Name</th>
+                    <th>Contact Number</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-table-contacts">
+            </tbody>
+            <tfoot>
+                <tr>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+
+    <footer>
+        <span>by Nicollas Prudencio</span>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
